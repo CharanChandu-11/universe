@@ -1,0 +1,88 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "firstName": "John",
+      "lastName": "Doe",
+      "username": "johndoe",
+      "email": "21071A0501@vnrvjiet.in",
+      "password": "password123",
+      "collegeName": "VNR VJIET",
+      "course": "Computer Science",
+      "year": "3",
+      "bio": "Computer Science student passionate about web development"
+    },
+    {
+      "id": "2",
+      "firstName": "Jane",
+      "lastName": "Smith",
+      "username": "janesmith",
+      "email": "22071A0502@vnrvjiet.in",
+      "password": "securepass456",
+      "collegeName": "VNR VJIET",
+      "course": "Information Technology",
+      "year": "2",
+      "bio": "IT enthusiast and mobile app developer"
+    },
+    {
+      "id": "3",
+      "firstName": "Charan",
+      "lastName": "Chandu",
+      "username": "CharanChandu",
+      "email": "23071A05T7@vnrvjiet.in",
+      "password": "12345678",
+      "collegeName": "VNR Vignana jyothi Institute of Engineering & Technology",
+      "course": "CSE",
+      "year": "2",
+      "bio": ""
+    },
+    {
+      "id": 4,
+      "firstName": "Bhavya",
+      "lastName": "Sree",
+      "username": "BhavyaSree",
+      "email": "23071A05T3@vnrvjiet.in",
+      "password": "12345678",
+      "collegeName": "VNR Vignana jyothi Institute of Engineering & Technology",
+      "course": "CSE",
+      "year": "2",
+      "bio": ""
+    },
+    {
+      "id": 5,
+      "firstName": "Malli",
+      "lastName": "Sin",
+      "username": "Mallikarjuna",
+      "email": "23071A05U4@vnrvjiet.in",
+      "password": "12345678",
+      "collegeName": "VNR Vignana jyothi Institute of Engineering & Technology",
+      "course": "CSE",
+      "year": "2",
+      "bio": ""
+    },
+    {
+      "id": 6,
+      "firstName": "k",
+      "lastName": "jaathi",
+      "username": "justin",
+      "email": "23071A05Q2@vnrvjiet.in",
+      "password": "12345678",
+      "collegeName": "VNR Vignana jyothi Institute of Engineering & Technology",
+      "course": "CSE",
+      "year": "2",
+      "bio": ""
+    },
+    {
+      "id": 7,
+      "firstName": "Y",
+      "lastName": "Shreyas",
+      "username": "Shreyas",
+      "email": "23071A05U2@vnrvjiet.in",
+      "password": "12345678",
+      "collegeName": "VNR Vignana jyothi Institute of Engineering & Technology",
+      "course": "CSE",
+      "year": "2",
+      "bio": ""
+    }
+  ]
+}

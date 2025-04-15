@@ -1,0 +1,18 @@
+/* Footer Styling */
+footer {
+    background: #024083 !important; /* White Background */
+    padding: 15px 0;
+    text-align: center;
+    box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Footer Text with Gradient */
+  footer p {
+    font-size: 1rem;
+    font-weight: bold;
+    background: white;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 0;
+  }
+  

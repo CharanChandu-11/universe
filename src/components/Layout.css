@@ -1,0 +1,55 @@
+/* Reset all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.layout {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Full viewport height */
+    position: relative; /* For positioning context */
+    width: 100vw; /* Full width */
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(38, 38, 54, 0.95);
+    color: white;
+    text-align: center;
+    z-index: 1000;
+
+}
+
+.content {
+    flex: 1;
+    padding-top: 60px; /* Space for header */
+    padding-bottom: 60px; /* Space for footer */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(38, 38, 54, 0.95);
+    color: white;
+    text-align: center;
+    z-index: 1000;
+    padding: 10px;
+}

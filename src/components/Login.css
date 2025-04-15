@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: rgba(30, 30, 47, 0.95);
+    backdrop-filter: blur(2px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Changed from height: 100vh */
+    background: #ffffff;  /* fallback for old browsers */
+    overflow: hidden; /* Prevent scrolling */
+}
+
+
+/* Glassy Effect Container */
+.container {
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: center !important;
+    align-items: center !important;
+    max-width: 1100px !important;
+    width: 100% !important;
+    padding: 0;
+    background: rgba(255, 255, 255, 0.1) !important;
+    backdrop-filter: blur(10px) !important;
+    border-radius: 15px !important;
+    overflow: hidden !important;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3) !important;
+    border: 1px solid rgba(255, 255, 255, 0.2) !important;
+}
+
+/* Left Section (Image & Text) */
+.image-section {
+    flex:1;
+    background: white;
+    padding: 90px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Title Styling */
+.image-section h2 {
+    font-size: 30px;
+    text-align: center;
+    font-weight: 700;
+    background: linear-gradient(45deg, #8a6cf0, #633ddf);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-top: 10px;
+}
+
+.image-section img {
+    height: 220px;
+    width: auto;
+    object-fit: contain;
+}
+
+/* Right Section (Login Form) */
+.form-section {
+    flex: 1;
+    padding: 40px;
+    background: rgba(38, 38, 54, 0.5);
+    backdrop-filter: blur(15px);
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Login Heading */
+h2 {
+    font-size: 28px;
+    font-weight: 600;
+    padding-bottom: 10px;
+}
+
+/* Text Styling */
+p {
+    font-size: 15px;
+    padding-top: 10px;
+}
+
+a {
+    color: #8a6cf0;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Input Fields */
+input {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(5px);
+    color: white;
+    transition: all 0.3s ease-in-out;
+}
+
+input::placeholder {
+    color: #ddd;
+}
+
+input:focus {
+    outline: none;
+    border: 1px solid #8a6cf0;
+    background: rgba(255, 255, 255, 0.3);
+}
+
+/* Remember Me & Forgot Password */
+.checkbox-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+/* Custom Checkbox */
+.remember-me {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 14px;
+    color: #ddd;
+}
+
+.remember-me input {
+    width: 14px;
+    height: 14px;
+    appearance: none;
+    background-color: transparent;
+    border: 1px solid #8a6cf0;
+    border-radius: 4px;
+    cursor: pointer;
+    position: relative;
+}
+
+.remember-me input:checked {
+    background-color: #8a6cf0;
+    border-color: #8a6cf0;
+}
+
+.remember-me input:checked::after {
+    content: "✔";
+    font-size: 10px;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Login Button */
+.create-btn {
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(45deg, #9d83f2, #633ddf);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 15px;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.create-btn:hover {
+    background: linear-gradient(45deg, #8e76df, #663bf4);
+    transform: scale(1.05);
+}
+
+/* Continue with Social Login */
+.continue {
+    text-align: center;
+    margin-top: 15px;
+}
+
+/* Social Buttons */
+.social-login {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.social-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+}
+
+.social-btn:hover {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.social-btn i {
+    font-size: 18px;
+}
+
+.google {
+    color: white;
+}
+
+.google:hover {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.apple {
+    color: white;
+}
+
+.apple:hover {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        width: 90%;
+    }
+
+    .image-section {
+        padding: 20px;
+    }
+
+    .image-section img {
+        height: 180px;
+    }
+
+    .form-section {
+        padding: 30px;
+    }
+}

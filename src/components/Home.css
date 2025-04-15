@@ -1,0 +1,126 @@
+.home {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .hero {
+    background: #Fff; 
+    
+    color: white;
+    padding: 50px 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .hero h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    background: linear-gradient(to left, #493240, #FF0099);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .hero p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: black;
+  }
+  
+  .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: white;
+    color: #007bff;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  
+  .btn:hover {
+    background: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+
+  }
+  
+  .categories {
+    margin-top: 30px;
+  }
+  
+  .category-list {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+  }
+  
+  .category-list a {
+    padding: 10px 15px;
+    background: #f4f4f4;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #333;
+    transition: 0.3s;
+  }
+  
+  .category-list a:hover {
+    background: #5d19bc;
+    color: white;
+  }
+  
+  .featured, .latest, .about {
+    margin-top: 40px;
+  }
+  
+  .blog-grid {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+  }
+  
+  .blog-card {
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    text-decoration: none;
+    color: #333;
+    transition: 0.3s;
+  }
+  
+  .blog-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+  }
+  
+  .blog-card h3 {
+    font-size: 1.2rem;
+  }
+  
+  .blog-card p {
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+  }
+  
+  .blog-card a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .blog-card a:hover {
+    text-decoration: underline;
+  }
+  
+  .about {
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 10px;
+  }
+  
+  .about p {
+    font-size: 1.1rem;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
