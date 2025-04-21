@@ -5,7 +5,8 @@ import Login from "./components/Login";
 import Home from "./components/Home";
 import Layout from "./components/Layout";
 import Blog from "./components/Blog";
-
+import Weather from "./components/Weather";
+import ManageTasks from "./components/TODO/ManageTasks";
 function App() {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
   return (
@@ -26,6 +27,11 @@ function App() {
           <Route path="register" element={<Register />} />
           <Route path="home" element={<Home />} />
           <Route path="blog" element={<Blog />} />
+          <Route path="weather" element={<Weather />} />
+          <Route
+            path="todo"
+            element={<ManageTasks />}
+          />
           <Route
             path="login"
             element={<Login setIsAuthenticated={setIsAuthenticated} />}

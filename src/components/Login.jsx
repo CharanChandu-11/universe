@@ -1,8 +1,8 @@
 import React, { useState,useContext } from "react";
 import { useNavigate } from "react-router-dom";
 import "./Login.css";
-import loginImage from "./Loginimg.jpg"; // Make sure the image path is correct
-import { LoginContext } from "../contexts/loginContext"; // Adjust the import path as necessary
+import loginImage from "./Loginimg.jpg"; 
+import { LoginContext } from "../contexts/loginContext"; 
 
 const Login = () => {
   const API_URL = "http://localhost:3001";
@@ -12,7 +12,7 @@ const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [errorMessage, setErrorMessage] = useState("");
-  const [rememberMe, setRememberMe] = useState(false); // purely for UI toggle
+  const [rememberMe, setRememberMe] = useState(false); 
   const [isLoading, setIsLoading] = useState(false);
 
   const handleSubmit = async (event) => {
@@ -46,7 +46,6 @@ const Login = () => {
         return;
       }
 
-      // Save user session (in-memory, not localStorage)
       const userInfo = {
         id: user.id,
         firstName: user.firstName,

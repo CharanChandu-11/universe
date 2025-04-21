@@ -4,6 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { LoginProvider } from './contexts/loginContext'; // Use the provider component, not context directly
+import './index.css';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

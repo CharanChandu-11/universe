@@ -20,6 +20,12 @@ const Header = () => {
         <li className="nav-item">
             <Link className="nav-link" to="/blog">Blogs</Link>
           </li>
+          {/* <li className="nav-item">
+            <Link className="nav-link" to="/weather">Weather</Link>
+          </li>
+          <li className="nav-item">
+            <Link className="nav-link" to="/todo">TODO</Link>
+          </li> */}
           {isAuthenticated ? (
             <>
               <li className="nav-item">
