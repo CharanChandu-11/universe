@@ -30,17 +30,10 @@
     padding-top: 60px; /* Space for header */
     padding-bottom: 60px; /* Space for footer */
     width: 100%;
-    display: flex;
+
     justify-content: center;
 }
 
-.container {
-    width: 100%;
-    max-width: 1200px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
 
 .footer {
     position: fixed;

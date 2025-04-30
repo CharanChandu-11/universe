@@ -1,0 +1,182 @@
+.blog-container {
+    margin: 1.5rem;
+    margin-top: 2rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .blog-header h1 {
+    font-weight: 700;
+    font-size: 2.5rem;
+  }
+  
+  .blog-header p {
+    color: #6c757d;
+  }
+  
+  .blog-actions {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .blog-actions .btn {
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .blog-actions .btn:hover {
+    transform: translateY(-2px);
+  }
+  
+  .filter-card {
+    border-radius: 0.75rem;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .filter-card:hover {
+    box-shadow: 0 0 18px rgba(0, 0, 0, 0.08);
+  }
+  
+  .filter-type-btns .btn {
+    margin-left: 0.25rem;
+    margin-right: 0.25rem;
+    transition: all 0.3s ease;
+  }
+  
+  .filter-type-btns .btn:hover {
+    transform: scale(1.05);
+  }
+  
+  .form-check-inline {
+    margin-right: 1rem;
+  }
+  
+  .blog-search-input {
+    background-color: #f8f9fa;
+    border-radius: 0.4rem;
+    border: 1px solid #ced4da;
+    transition: border-color 0.3s ease;
+  }
+  
+  .blog-search-input:focus {
+    border-color: #007bff;
+    outline: none;
+  }
+  
+  .blog-card {
+    border: none;
+    border-radius: 1rem;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  }
+  
+  .blog-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .blog-card img {
+    height: 180px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+  }
+  
+  .blog-card img:hover {
+    transform: scale(1.02);
+  }
+  
+  .blog-card .card-title {
+    font-weight: 600;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .blog-card .card-text {
+    color: #495057;
+    font-size: 0.95rem;
+    transition: color 0.2s ease;
+  }
+  
+  .blog-card .card-text:hover {
+    color: #212529;
+  }
+  
+  .blog-card .badge {
+    font-size: 0.75rem;
+  }
+  
+  .blog-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.8rem;
+    margin-top: 0.5rem;
+  }
+  
+  .read-more-btn {
+    transition: all 0.3s ease;
+  }
+  
+  .read-more-btn:hover {
+    background-color: #007bff;
+    color: white;
+  }
+  
+.abc{
+    font-size: 2.5rem;
+    font-weight: bold;
+    background: linear-gradient(to left, #493240, #FF0099);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  /* Add these styles to your Blog.css file */
+
+/* Make search and filter containers same height and aligned */
+.blog-filters-row {
+    display: flex;
+    align-items: stretch;
+    margin-bottom: 20px;
+  }
+  
+  .search-container, .filter-container {
+    height: 100%;
+  }
+  
+  .search-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .blog-search-input {
+    height: 100%;
+    border-radius: 4px;
+  }
+  
+  .filter-card {
+    height: 100%;
+  }
+  
+  .filter-card .card {
+    height: 100%;
+    margin: 0;
+  }
+  
+  /* Make sure the filter buttons are properly aligned */
+  .filter-type-btns {
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 767.98px) {
+    .blog-filters-row {
+      flex-direction: column;
+    }
+    
+    .search-container, .filter-container {
+      width: 100%;
+      margin-bottom: 15px;
+    }
+  }

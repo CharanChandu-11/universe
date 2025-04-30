@@ -5,8 +5,11 @@ import Login from "./components/Login";
 import Home from "./components/Home";
 import Layout from "./components/Layout";
 import Blog from "./components/Blog";
-import Weather from "./components/Weather";
-import ManageTasks from "./components/TODO/ManageTasks";
+import MyBlogs from "./components/MyBlogs";
+import CreateBlog from "./components/CreateBlog";
+import EditBlog from "./components/EditBlog";
+import BlogDetails from "./components/BlogDetails";
+import AllBlogs from "./components/AllBlogs";
 function App() {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
   return (
@@ -27,11 +30,11 @@ function App() {
           <Route path="register" element={<Register />} />
           <Route path="home" element={<Home />} />
           <Route path="blog" element={<Blog />} />
-          <Route path="weather" element={<Weather />} />
-          <Route
-            path="todo"
-            element={<ManageTasks />}
-          />
+          <Route path="my-blogs" element={<MyBlogs />} />
+          <Route path="/create-blog" element={<CreateBlog />} />
+              <Route path="/edit-blog/:id" element={<EditBlog />} />
+          <Route path="/blog/:id" element={<BlogDetails />} />
+          <Route path="/all-blogs" element={<AllBlogs />} />
           <Route
             path="login"
             element={<Login setIsAuthenticated={setIsAuthenticated} />}
@@ -41,5 +44,4 @@ function App() {
     </Router>
   );
 }
-
 export default App;

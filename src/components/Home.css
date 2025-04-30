@@ -12,7 +12,7 @@
     margin-bottom: 20px;
   }
   
-  .hero h1 {
+  .hero-text h1{
     font-size: 2.5rem;
     font-weight: bold;
     background: linear-gradient(to left, #493240, #FF0099);
@@ -123,4 +123,92 @@
     max-width: 600px;
     margin: 0 auto;
   }
+  .hero-with-spline {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    padding: 2rem;
+    flex-wrap: wrap;
+  }
   
+  .hero-text {
+    flex: 1;
+    z-index: 2;
+    padding: 1rem;
+    min-width: 300px;
+  }
+  [data-spline-attribution],
+.spline-watermark,
+canvas + div {
+  display: none !important;
+  opacity: 0 !important;
+  visibility: hidden !important;
+  pointer-events: none !important;
+}
+  .hero-spline {
+    flex: 1;
+    position: relative;
+
+    min-width: 300px;
+    max-width: 600px;
+    height: 400px;
+    z-index: 1;
+  }
+  
+  .hero-spline canvas {
+    width: 100% !important;
+    height: 100% !important;
+  }
+  
+  .btn {
+    background-color: #5a67d8;
+    color: white;
+    padding: 0.75rem 1.25rem;
+    border-radius: 8px;
+    text-decoration: none;
+    margin-top: 1rem;
+    display: inline-block;
+  }
+  /* CSS to hide the "Built with Spline" attribution */
+
+/* Method 1: Hide using a white overlay box */
+.spline-attribution-overlay {
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  width: 1205px;
+  height: 400px;
+  background-color: rgba(195, 22, 22, 0.726);
+  z-index: 9999;
+  border-radius: 20px; /* Match the rounded corners of the button */
+}
+
+/* Method 2: Hide specifically targeting Spline's attribution element */
+[data-spline-attribution] {
+  display: none !important;
+}
+
+/* Method 3: If the attribution is in an iframe */
+.spline-viewer iframe {
+  overflow: hidden;
+}
+
+/* Alternative approach for the specific homepage layout */
+.home-page-container {
+  position: relative;
+  overflow: hidden;
+}
+
+
+.hero-spline::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 200px;
+  height: 70px;
+  background-color: white;
+  z-index: 100;
+  border-radius: 20px;
+}

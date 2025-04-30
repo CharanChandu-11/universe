@@ -1,16 +1,22 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import Spline from "@splinetool/react-spline";
 import "./Home.css";
 
 const Home = () => {
   return (
     <div className="home">
-      {/* Hero Section */}
-      <section className="hero">
-        <h1>Welcome to UniVerse</h1>
-        <p>Stay updated with the latest academic insights, projects, and study materials.</p>
-        <Link to="/blogs" className="btn">Explore Blogs</Link>
+    <section className="hero-with-spline">
+        <div className="hero-text">
+          <h1>Welcome to UniVerse</h1>
+          <p>Stay updated with the latest academic insights, projects, and study materials.</p>
+          <Link to="/blog" className="btn">Explore Blogs</Link>
+        </div>
+        <div className="hero-spline">
+          <Spline scene="https://prod.spline.design/4MqUK4Kn04dAvl1I/scene.splinecode" />
+        </div>
       </section>
+
 
       {/* Categories Section */}
       <section className="categories">

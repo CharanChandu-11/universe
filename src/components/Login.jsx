@@ -80,8 +80,8 @@ const Login = () => {
 
       {/* Right Section - Form */}
       <div className="form-section">
-        <h2>Log In</h2>
-        <p>Don't have an account? <a href="/register">Sign up</a></p>
+        <h2 >Log In</h2>
+        <p>Don't have an account? <a href="/register" className="text-primary">Sign up</a></p>
 
         <form onSubmit={handleSubmit}>
           <input

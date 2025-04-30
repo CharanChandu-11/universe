@@ -20,14 +20,14 @@ const Header = () => {
         <li className="nav-item">
             <Link className="nav-link" to="/blog">Blogs</Link>
           </li>
-          {/* <li className="nav-item">
-            <Link className="nav-link" to="/weather">Weather</Link>
-          </li>
           <li className="nav-item">
-            <Link className="nav-link" to="/todo">TODO</Link>
-          </li> */}
+            <Link className="nav-link" to="/all-blogs">All Blogs</Link>
+          </li>
           {isAuthenticated ? (
             <>
+              <li className="nav-item">
+                <Link className="nav-link" to="/my-blogs">My Blogs</Link>
+              </li>
               <li className="nav-item">
                 <button className="nav-link" onClick={handleLogout}>
                   Logout
@@ -49,6 +49,5 @@ const Header = () => {
       </div>
     </nav>
   );
-};
-
+}
 export default Header;
